@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+const bottomContainerHeight = 80.0;
+const constColour = Color(0xFF1D1E33);
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -31,28 +33,43 @@ class InputPage extends StatelessWidget {
           child: Row(
             children: <Widget>[
               Expanded(
-                child: ReUsefullCard(),
+                child: ReUsefullCard(
+                  colour: constColour,
+                ),
               ),
               Expanded(
-                child: ReUsefullCard(),
+                child: ReUsefullCard(
+                  colour: constColour,
+                ),
               ),
             ],
           ),
         ),
         Expanded(
-          child: ReUsefullCard(),
+          child: ReUsefullCard(
+            colour: constColour,
+          ),
         ),
         Expanded(
           child: Row(
             children: <Widget>[
               Expanded(
-                child: ReUsefullCard(),
+                child: ReUsefullCard(
+                  colour: constColour,
+                ),
               ),
               Expanded(
-                child: ReUsefullCard(),
+                child: ReUsefullCard(
+                  colour: constColour,
+                ),
               ),
             ],
           ),
+        ),
+        Container(
+          color: Color(0xFFEB1555),
+          width: double.infinity,
+          height: bottomContainerHeight,
         ),
       ],
     );
@@ -60,6 +77,8 @@ class InputPage extends StatelessWidget {
 }
 
 class ReUsefullCard extends StatelessWidget {
+  ReUsefullCard({@required this.colour});
+  final Color colour;
   @override
   Widget build(BuildContext context) {
     return Container(
