@@ -1,16 +1,17 @@
-# bmi_calc
+# BMI Calculator
 
 A new Flutter project.
 
-## Getting Started
+## Aim 
+To Design A Beautiful Body Mass Index Calculator Using Flutter 
 
-This project is a starting point for a Flutter application.
+## About
+Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. Enter your weight and height using standard or metric measures.
 
-A few resources to get you started if this is your first Flutter project:
+### How do I calculate my BMI?
+Body Mass Index is a simple calculation using a person's height and weight. The formula is "BMI = kg/m2" where kg is a person's weight in kilograms and m2 is their height in metres squared.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Final Output
+It will be a multi screen app with simple functionality but full-on custom styling.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Finished App](https://github.com/HaariRocks/Images-gifs/blob/master/bmi-calc-demo.gif)
