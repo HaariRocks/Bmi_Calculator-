@@ -8,7 +8,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Color(0xFF0A0E21),
+        scaffoldBackgroundColor: Color(0xFF0A0E21),
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: Text("BMI CALCULATOR"),
@@ -22,6 +25,49 @@ class MyApp extends StatelessWidget {
 class InputPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      children: <Widget>[
+        Expanded(
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: ReUsefullCard(),
+              ),
+              Expanded(
+                child: ReUsefullCard(),
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: ReUsefullCard(),
+        ),
+        Expanded(
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: ReUsefullCard(),
+              ),
+              Expanded(
+                child: ReUsefullCard(),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class ReUsefullCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(15),
+      decoration: BoxDecoration(
+        color: Color(0xFF1D1E33),
+        borderRadius: BorderRadius.circular(10),
+      ),
+    );
   }
 }
