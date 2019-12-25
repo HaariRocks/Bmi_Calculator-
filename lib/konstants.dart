@@ -8,3 +8,8 @@ const klableTextStyle = TextStyle(
   fontSize: 18,
   color: Color(0xFF8d8E98),
 );
+
+const kIntegerStyle = TextStyle(
+  fontSize: 50.0,
+  fontWeight: FontWeight.w900,
+);
