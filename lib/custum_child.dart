@@ -1,3 +1,4 @@
+import 'package:bmi_calc/konstants.dart';
 import 'package:flutter/material.dart';
 
 class CustumChild extends StatelessWidget {
@@ -18,7 +19,7 @@ class CustumChild extends StatelessWidget {
         ),
         Text(
           text,
-          style: lableTextStyle,
+          style: klableTextStyle,
         )
       ],
     );
