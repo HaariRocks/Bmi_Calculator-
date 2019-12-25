@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 
-const lableTextStyle = TextStyle(
-  fontSize: 18,
-  color: Color(0xFF8d8E98),
-);
-
 class CustumChild extends StatelessWidget {
   CustumChild({this.text, this.icon});
   final String text;
