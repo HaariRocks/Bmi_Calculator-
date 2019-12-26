@@ -4,6 +4,12 @@ import 'package:bmi_calc/reusefulCard.dart';
 import 'package:flutter/material.dart';
 
 class ResultsPage extends StatelessWidget {
+  final String bmiResult;
+  final String textResult;
+  final String interpolationResult;
+
+  ResultsPage({this.bmiResult, this.textResult, this.interpolationResult});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,15 +39,15 @@ class ResultsPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    "Normal",
+                    textResult,
                     style: kResultTextStyle,
                   ),
                   Text(
-                    "22.0",
+                    bmiResult,
                     style: kBmiTextStyle,
                   ),
                   Text(
-                    "your bmi results discription is shown here",
+                    interpolationResult,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 20.0,

@@ -1,4 +1,5 @@
 import 'package:bmi_calc/buttom_button.dart';
+import 'package:bmi_calc/calculate_result.dart';
 import 'package:bmi_calc/custum_child.dart';
 import 'package:bmi_calc/konstants.dart';
 import 'package:bmi_calc/results_page.dart';
@@ -205,10 +206,17 @@ class _InputPageState extends State<InputPage> {
             style: kButtomBTextStyle,
           ),
           onTap: () {
+            CalculateResult calc =
+                CalculateResult(weight: weight, height: height);
+
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => ResultsPage(),
+                builder: (context) => ResultsPage(
+                  bmiResult: calc.calculateBMI(),
+                  textResult: calc.getResult(),
+                  interpolationResult: calc.getInterpolation(),
+                ),
               ),
             );
           },
